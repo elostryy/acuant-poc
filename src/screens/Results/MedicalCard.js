@@ -1,6 +1,4 @@
 import React, { Component, Fragment } from 'react';
-import { Redirect } from 'react-router-dom';
-import moment from 'moment';
 import { connect } from 'react-redux';
 import Processing from './../Processing';
 import { bindActionCreators } from 'redux';
@@ -12,10 +10,6 @@ import Header from '../Header';
 import { config } from '../../config';
 
 class MedicalCard extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   componentDidMount() {
     let { instanceID } = this.props;
     this.props.processMedicard({

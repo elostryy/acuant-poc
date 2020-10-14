@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from 'react';
-import { Redirect } from 'react-router-dom';
 import moment from 'moment';
 import { connect } from 'react-redux';
 import Processing from './../Processing';

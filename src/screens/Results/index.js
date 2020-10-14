@@ -2,15 +2,10 @@ import React, { Component, Fragment } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { Route } from 'react-router-dom';
-import Header from '../Header';
 import IDPassport from './IDPassport';
 import MedicalCard from './MedicalCard';
 
 class Results extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <Fragment>

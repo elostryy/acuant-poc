@@ -15,7 +15,7 @@ export function processID(instanceID) {
            * Pass processed data to our data object
            */
 
-          documentObj.Fields.map((field) => {
+          documentObj.Fields.forEach((field) => {
             dataObject[field.Name] = field.Value;
           });
 

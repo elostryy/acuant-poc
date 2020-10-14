@@ -5,13 +5,8 @@ import { Route } from 'react-router-dom';
 import DefaultError from './DefaultError';
 import LowResolution from './LowResolution';
 import Header from '../Header';
-import MobileOnly from './MobileOnly';
 
 class Error extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <Fragment>
@@ -23,10 +18,6 @@ class Error extends Component {
         <Route
           path={`${this.props.match.url}/lowresolution`}
           component={LowResolution}
-        />
-        <Route
-          path={`${this.props.match.url}/mobileonly`}
-          component={MobileOnly}
         />
       </Fragment>
     );

@@ -1,8 +1,5 @@
 import axios from 'axios';
 import { config } from '../../config';
-/*
- global window
- */
 
 const client = (() => {
   return axios.create({
