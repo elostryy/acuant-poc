@@ -20,7 +20,7 @@ class IDPassport extends Component {
   }
 
   componentDidMount() {
-    if (config.REACT_APP_FRM_ENABLED === 'false') {
+    if (!config.REACT_APP_FRM_ENABLED) {
       let { instanceID } = this.props;
       this.props.processID(instanceID);
     }

@@ -75,6 +75,8 @@ class CapturePhoto extends Component {
       <Fragment>
         <Header />
 
+        {console.log(this.props)}
+
         <div className="body column capture_photo">
           <div className="row wrapper description_container">
             <p className="description">
@@ -108,12 +110,12 @@ class CapturePhoto extends Component {
             <div className="wrapper column capture_controls">
               {this.props.sidesLeft === 2 && (
                 <Fragment>
-                  {config.REACT_APP_IDPASSPORT_ENABLED === 'true' && (
+                  {config.REACT_APP_IDPASSPORT_ENABLED && (
                     <label className="btn" onClick={() => this.openCamera(1)}>
                       <p className={'buttonBgText'}>Capture ID/Passport</p>
                     </label>
                   )}
-                  {config.REACT_APP_MEDICAL_CARD_ENABLED === 'true' && (
+                  {config.REACT_APP_MEDICAL_CARD_ENABLED && (
                     <label className="btn" onClick={() => this.openCamera(2)}>
                       <p className={'buttonBgText'}>Capture Medical Card</p>
                     </label>

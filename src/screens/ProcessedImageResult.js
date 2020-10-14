@@ -41,7 +41,7 @@ class ProcessedImageResult extends Component {
         this.props.history.push('/capture/photo');
       } else {
         if (
-          config.REACT_APP_FRM_ENABLED === 'true' &&
+          config.REACT_APP_FRM_ENABLED &&
           this.props.cardType === 1
         ) {
           this.props.history.push('/capture/selfie');
@@ -57,7 +57,7 @@ class ProcessedImageResult extends Component {
       }
     } else {
       if (
-        config.REACT_APP_FRM_ENABLED === 'true' &&
+        config.REACT_APP_FRM_ENABLED &&
         this.props.cardType === 1
       ) {
         this.props.history.push('/capture/selfie');
