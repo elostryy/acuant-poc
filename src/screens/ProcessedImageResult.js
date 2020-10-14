@@ -130,6 +130,7 @@ class ProcessedImageResult extends Component {
   getClassification() {
     ApiService.getClassification(this.props.instanceID)
       .then((result) => {
+        console.log('classification', result);
         if (result.Type && result.Type.ClassName === 'Unknown') {
           this.setProcessing(false);
           this.props.history.push('/error/default');

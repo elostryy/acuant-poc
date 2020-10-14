@@ -74,9 +74,6 @@ class CapturePhoto extends Component {
     return (
       <Fragment>
         <Header />
-
-        {console.log(this.props)}
-
         <div className="body column capture_photo">
           <div className="row wrapper description_container">
             <p className="description">

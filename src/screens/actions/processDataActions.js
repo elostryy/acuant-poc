@@ -6,6 +6,7 @@ export function processID(instanceID) {
   return (dispatch) => {
     ApiService.getResults(instanceID)
       .then(async (res) => {
+        console.log('result', res);
         var documentObj = res;
         var base64FaceReformattedImage = null;
         var base64SignatureReformattedImage = null;
