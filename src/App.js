@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '@babel/polyfill';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { ConnectedRouter } from 'connected-react-router';
 import { Provider } from 'react-redux';

@@ -12,7 +12,7 @@ import { config } from './config';
  */
 const initialState = {
   config: {
-    instanceID: 'efddecc1-5b38-4424-af2c-0e7aaee58c49',
+    instanceID: null,
     frontSubmitted: false,
     backSubmitted: false,
   },
